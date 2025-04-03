@@ -5,9 +5,6 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class BehaviorSubjectService {
-
-  constructor() { }
-
   private dataSubject = new BehaviorSubject<string>('Initial Value');
   data$ = this.dataSubject.asObservable();
 

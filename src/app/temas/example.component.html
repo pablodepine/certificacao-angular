@@ -11,3 +11,17 @@
     <p>{{ 'John Doe' | personName }}</p>
     <p>{{ 'John Doe' | personName:false }}</p>
 </div>
+
+<!-- BEHAVIOR SUBJECT EXAMPLE -->
+<div class="content-space">
+    <h1>BEHAVIOR SUBJECT EXAMPLE</h1>
+    <button (click)="updateBehaviorSubjectValue()">Update</button>
+    <p>Valor do BehaviorSubject: {{ dataBehaviorSubject }}</p>
+</div>
+
+<!-- SIGNAL EXAMPLE -->
+<div class="content-space">
+    <h1>SIGNAL EXAMPLE</h1>
+    <button (click)="updateSignalValue()">Update</button>
+    <p>Valor do Signal: {{ dataSignal() }}</p>
+</div>

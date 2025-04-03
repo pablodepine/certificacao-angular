@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +6,14 @@ import { Injectable } from '@angular/core';
 export class SignalService {
 
   constructor() { }
+
+  private dataSignal = signal<string>('Initial Value');
+
+  updateData(newValue: string) {
+    this.dataSignal.set(newValue);
+  }
+
+  getDataSignal() {
+    return this.dataSignal;
+  }
 }
