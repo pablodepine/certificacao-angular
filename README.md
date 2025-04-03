@@ -1,4 +1,4 @@
-# Laboratório - Certificacao Angular
+# Laboratório - Certificação Angular
 
 Esse projeto foi desenvolvido para ser um laboratório de testes para aprendizado de temas para certificação Angular
 
